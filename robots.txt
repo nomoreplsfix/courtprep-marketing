@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://courtroomready.org/sitemap.xml
+Sitemap: https://courtprep.uk/sitemap.xml
