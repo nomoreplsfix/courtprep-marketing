@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: blob:; media-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; upgrade-insecure-requests">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>CourtPrep | Familiarise yourself with a hearing</title>
+<meta name="description" content="CourtPrep is a virtual courtroom for civil hearings in England and Wales. Practise the setting of a hearing. Familiarisation, not legal advice.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://courtroomready.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CourtPrep">
+<meta property="og:title" content="CourtPrep | Familiarise yourself with a hearing">
+<meta property="og:description" content="A virtual courtroom for civil hearings in England and Wales. Familiarisation, not legal advice.">
+<meta property="og:url" content="https://courtroomready.org/">
+<meta property="og:image" content="https://courtroomready.org/uploads/about-hero-wide.jpg">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"CourtPrep","url":"https://courtroomready.org/","description":"A virtual courtroom that helps people in England and Wales become familiar with a civil hearing. Familiarisation, not legal advice.","publisher":{"@type":"Organization","name":"Obiter Studio Limited","email":"support@courtroomready.org","url":"https://courtroomready.org/"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F4F1EA; color: #17181A; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: #8B3038; text-decoration: none; transition: color .3s ease, background .3s ease, border-color .3s ease; }
+a:hover { color: #16233F; }
+::selection { background: #16233F; color: #F4F1EA; }
+@keyframes heroDrift { 0% { transform: scale(1) translate(0,0); } 50% { transform: scale(1.05) translate(-1.2%, -1%); } 100% { transform: scale(1) translate(0,0); } }
+@keyframes heroIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</helmet>
+
+<div data-screen-label="Home" style="min-width:0">
+
+<nav style="position:sticky;top:0;z-index:60;background:rgba(20,33,61,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(244,241,234,.1)">
+  <div style="max-width:1200px;margin:0 auto;padding:16px clamp(20px,4vw,40px);display:flex;align-items:center;gap:clamp(14px,3vw,32px);flex-wrap:wrap">
+    <a href="#hero" style="color:#F7F6F2;font-size:16px;font-weight:600;letter-spacing:.2px;line-height:1" style-hover="color:#FFFFFF">CourtPrep</a>
+    <div style="display:flex;gap:clamp(14px,2.6vw,28px);align-items:center;flex-wrap:wrap;font-size:13.5px">
+      <a href="#product" style="color:rgba(244,241,234,.72)" style-hover="color:#FFFFFF">Product</a>
+      <a href="#built-for" style="color:rgba(244,241,234,.72)" style-hover="color:#FFFFFF">Built for</a>
+      <a href="about.html" style="color:rgba(244,241,234,.72)" style-hover="color:#FFFFFF">About</a>
+    </div>
+    <div style="flex:1"></div>
+    <a href="#hero" onClick="{{ startSignup }}" style="background:#8B3038;color:#F7F6F2;font-size:13px;font-weight:600;padding:10px 18px;border-radius:6px;display:inline-flex;align-items:center;gap:8px" style-hover="background:#7A2830;color:#F7F6F2">Experience a hearing<span style="font-size:13px;line-height:1">→</span></a>
+  </div>
+</nav>
+
+<section id="hero" data-screen-label="Hero" style="position:relative;overflow:hidden;background:#0D1730;min-height:max(640px,94vh);display:flex;align-items:stretch">
+  <video ref="{{ videoRef }}" src="uploads/tribunal-house-hero-8s-half-open-push-loop.mp4" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+  <div ref="{{ overlayRef }}" style="position:absolute;inset:0;background:linear-gradient(183deg, rgba(10,18,35,.66) 0%, rgba(10,18,35,.3) 44%, rgba(8,15,30,.82) 100%)"></div>
+  <div style="position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;padding:clamp(90px,15vh,160px) clamp(24px,5vw,80px) clamp(56px,9vh,96px);display:flex;flex-direction:column;justify-content:flex-end">
+    <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:.16em;color:rgba(244,241,234,.78);text-transform:uppercase;animation:heroIn 1s cubic-bezier(.22,.61,.21,1) .2s both">
+      <span style="display:inline-block;width:28px;height:1px;background:#D9A05B"></span>
+      <span>CourtPrep · Virtual courtroom · England &amp; Wales</span>
+    </div>
+    <h1 style="font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(44px,7.2vw,96px);line-height:1;letter-spacing:-.03em;color:#FFFFFF;margin:26px 0 0;max-width:15ch;text-wrap:balance;text-shadow:0 2px 60px rgba(0,0,0,.5);animation:heroIn 1s cubic-bezier(.22,.61,.21,1) .35s both">Familiarise yourself with a hearing.</h1>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(24px,4vw,64px);flex-wrap:wrap;margin-top:clamp(30px,5vh,48px);animation:heroIn 1s cubic-bezier(.22,.61,.21,1) .5s both">
+      <p style="font-size:clamp(17px,1.35vw,21px);line-height:1.6;color:rgba(244,241,234,.9);margin:0;max-width:46ch;text-shadow:0 1px 24px rgba(0,0,0,.45)">A virtual courtroom with a digital judge and a participant from the other side. Experience a hearing whenever you need it.</p>
+      <div style="min-height:52px">
+        <sc-if value="{{ showIdle }}" hint-placeholder-val="{{ true }}">
+          <button onClick="{{ startSignup }}" style="background:#8B3038;color:#F7F6F2;border:none;cursor:pointer;font-family:inherit;font-size:14.5px;font-weight:600;padding:15px 26px;border-radius:6px;display:inline-flex;align-items:center;gap:10px;transition:background .3s ease;box-shadow:0 14px 34px -14px rgba(0,0,0,.6)" style-hover="background:#7A2830">Experience a hearing <span style="font-size:14px;line-height:1">→</span></button>
+        </sc-if>
+        <sc-if value="{{ showEmail }}" hint-placeholder-val="{{ false }}">
+          <form onSubmit="{{ submitEmail }}" style="display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;max-width:480px">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" value="{{ gotcha }}" onChange="{{ setGotcha }}" style="position:absolute;left:-9999px;height:1px;width:1px;opacity:0">
+            <input ref="{{ emailInputRef }}" type="email" required="{{ true }}" maxlength="254" value="{{ email }}" onChange="{{ setEmail }}" placeholder="you@example.com" aria-label="Email address" autocomplete="email" style="flex:1;min-width:220px;background:rgba(255,255,255,.96);border:1px solid rgba(244,241,234,.4);border-radius:6px;padding:13px 15px;font-family:inherit;font-size:14.5px;color:#16233F;outline:none">
+            <button type="submit" style="background:#8B3038;color:#F7F6F2;border:none;cursor:pointer;font-family:inherit;font-size:14.5px;font-weight:600;padding:13px 20px;border-radius:6px;transition:background .3s ease" style-hover="background:#7A2830">Experience a hearing</button>
+            <p style="flex-basis:100%;margin:2px 0 0;font-size:12.5px;color:rgba(244,241,234,.72)">We'll only use this to tell you when the courtroom is ready.</p>
+          </form>
+        </sc-if>
+        <sc-if value="{{ showDone }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;gap:12px;align-items:flex-start;border:1px solid rgba(244,241,234,.24);border-radius:6px;padding:16px 18px;background:rgba(13,23,48,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);max-width:420px">
+            <span style="color:#D9A05B;font-size:16px;line-height:1.5">✓</span>
+            <p style="margin:0;font-size:14.5px;line-height:1.6;color:#F4F1EA">Thank you for your email address. You're in. You will be notified when the courtroom is ready.</p>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="product" data-screen-label="Product demo" style="background:#FBFAF7;border-top:1px solid rgba(22,35,63,.1);padding:clamp(80px,12vh,130px) 0">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px)">
+    <div data-reveal="" style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:.16em;color:#8B3038;text-transform:uppercase">
+      <span style="display:inline-block;width:28px;height:1px;background:#8B3038"></span>
+      <span>Product · See it in action</span>
+    </div>
+    <div style="display:flex;align-items:flex-end;gap:clamp(28px,4vw,72px);flex-wrap:wrap;margin-top:26px">
+      <h2 data-reveal="" style="flex:1 1 480px;min-width:min(480px,100%);font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(32px,4.4vw,52px);line-height:1.02;letter-spacing:-.02em;color:#171921;margin:0;text-wrap:balance">How it works.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:clamp(18px,2.6vw,28px);margin-top:clamp(44px,7vh,64px)">
+        <div data-reveal="0" style="background:#FFFFFF;border:1px solid rgba(22,35,63,.12);border-radius:6px;overflow:hidden;display:flex;gap:0;align-items:stretch;flex-wrap:wrap;flex-direction:row-reverse;box-shadow:0 18px 36px -30px rgba(16,26,45,.35)">
+          <div style="flex:1 1 300px;min-width:min(300px,100%);aspect-ratio:16/10;background:#EFEBE2;border-left:1px solid rgba(22,35,63,.1);overflow:hidden">
+            <img src="uploads/ezgif-8f10a00011d04b05.gif" alt="A guided walkthrough of the courtroom layout" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="flex:1.25 1 320px;min-width:min(320px,100%);display:flex;gap:clamp(16px,2.4vw,26px);align-items:flex-start;padding:clamp(24px,3.2vw,36px)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.12em;color:#8B3038;padding-top:6px">01</span>
+            <div style="min-width:0">
+              <h3 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(20px,2.2vw,25px);letter-spacing:-.01em;color:#171921;margin:0;line-height:1.15">Walk through the courtroom.</h3>
+              <p style="margin:10px 0 0;font-size:15px;line-height:1.65;color:#4A505C;max-width:52ch">A guided tour of the room, so you know who is who and where to sit.</p>
+            </div>
+          </div>
+        </div>
+        <div data-reveal="1" style="background:#FFFFFF;border:1px solid rgba(22,35,63,.12);border-radius:6px;overflow:hidden;display:flex;gap:0;align-items:stretch;flex-wrap:wrap;box-shadow:0 18px 36px -30px rgba(16,26,45,.35)">
+          <div style="flex:1 1 300px;min-width:min(300px,100%);aspect-ratio:16/10;background:#EFEBE2;border-right:1px solid rgba(22,35,63,.1);overflow:hidden">
+            <img src="uploads/Courtsession .gif" alt="A court session with the digital judge underway" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="flex:1.25 1 320px;min-width:min(320px,100%);display:flex;gap:clamp(16px,2.4vw,26px);align-items:flex-start;padding:clamp(24px,3.2vw,36px)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.12em;color:#8B3038;padding-top:6px">02</span>
+            <div style="min-width:0">
+              <h3 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(20px,2.2vw,25px);letter-spacing:-.01em;color:#171921;margin:0;line-height:1.15">Start a session.</h3>
+              <p style="margin:10px 0 0;font-size:15px;line-height:1.65;color:#4A505C;max-width:52ch">Begin a hearing with our digital judge, and, where it helps, a participant from the other side.</p>
+            </div>
+          </div>
+        </div>
+        <div data-reveal="2" style="background:#FFFFFF;border:1px solid rgba(22,35,63,.12);border-radius:6px;overflow:hidden;display:flex;gap:0;align-items:stretch;flex-wrap:wrap;flex-direction:row-reverse;box-shadow:0 18px 36px -30px rgba(16,26,45,.35)">
+          <div style="flex:1 1 300px;min-width:min(300px,100%);aspect-ratio:16/10;background:#EFEBE2;border-left:1px solid rgba(22,35,63,.1);overflow:hidden">
+            <img src="uploads/Camera ezgif-20cb9829c970b33a.gif" alt="Enabling the camera for an optional eye-contact check" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="flex:1.25 1 320px;min-width:min(320px,100%);display:flex;gap:clamp(16px,2.4vw,26px);align-items:flex-start;padding:clamp(24px,3.2vw,36px)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.12em;color:#8B3038;padding-top:6px">03</span>
+            <div style="min-width:0">
+              <h3 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(20px,2.2vw,25px);letter-spacing:-.01em;color:#171921;margin:0;line-height:1.15">Turn on your camera, when you feel ready.</h3>
+              <p style="margin:10px 0 0;font-size:15px;line-height:1.65;color:#4A505C;max-width:52ch">You should only enable your camera if you feel ready. This is just so we can also help you practise holding strong, steady eye contact.</p>
+            </div>
+          </div>
+        </div>
+        <div data-reveal="3" style="background:#FFFFFF;border:1px solid rgba(22,35,63,.12);border-radius:6px;overflow:hidden;display:flex;gap:0;align-items:stretch;flex-wrap:wrap;box-shadow:0 18px 36px -30px rgba(16,26,45,.35)">
+          <div style="flex:1 1 300px;min-width:min(300px,100%);aspect-ratio:16/10;background:#EFEBE2;border-right:1px solid rgba(22,35,63,.1);overflow:hidden">
+            <img src="uploads/Scorecard.gif" alt="Session scorecards showing overall delivery scores" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="flex:1.25 1 320px;min-width:min(320px,100%);display:flex;gap:clamp(16px,2.4vw,26px);align-items:flex-start;padding:clamp(24px,3.2vw,36px)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.12em;color:#8B3038;padding-top:6px">04</span>
+            <div style="min-width:0">
+              <h3 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(20px,2.2vw,25px);letter-spacing:-.01em;color:#171921;margin:0;line-height:1.15">See feedback on your delivery.</h3>
+              <p style="margin:10px 0 0;font-size:15px;line-height:1.65;color:#4A505C;max-width:52ch">How your delivery came across, on pace, clarity and composure. Never on what you should say.</p>
+            </div>
+          </div>
+        </div>
+        <div data-reveal="4" style="background:#FFFFFF;border:1px solid rgba(22,35,63,.12);border-radius:6px;overflow:hidden;display:flex;gap:0;align-items:stretch;flex-wrap:wrap;flex-direction:row-reverse;box-shadow:0 18px 36px -30px rgba(16,26,45,.35)">
+          <div style="flex:1 1 300px;min-width:min(300px,100%);aspect-ratio:16/10;background:#EFEBE2;border-left:1px solid rgba(22,35,63,.1);overflow:hidden">
+            <img src="uploads/Reminder.gif" alt="A reminder card shown before the hearing day" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="flex:1.25 1 320px;min-width:min(320px,100%);display:flex;gap:clamp(16px,2.4vw,26px);align-items:flex-start;padding:clamp(24px,3.2vw,36px)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.12em;color:#8B3038;padding-top:6px">05</span>
+            <div style="min-width:0">
+              <h3 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(20px,2.2vw,25px);letter-spacing:-.01em;color:#171921;margin:0;line-height:1.15">Receive reminders before the day.</h3>
+              <p style="margin:10px 0 0;font-size:15px;line-height:1.65;color:#4A505C;max-width:52ch">Simple reminders of what to have in mind before the hearing, so nothing important slips on the day.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="built-for" data-screen-label="Built for" style="position:relative;overflow:hidden;background:#14213D;min-height:max(620px,92vh);display:flex;align-items:stretch">
+  <img src="uploads/builtfor.jpeg" alt="A court building reflected in glass at dusk" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg, rgba(12,18,32,.42) 0%, rgba(12,18,32,.12) 45%, rgba(12,18,32,.55) 100%)"></div>
+  <div style="position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;padding:clamp(70px,10vh,110px) clamp(24px,5vw,80px) clamp(44px,7vh,70px);display:flex;flex-direction:column;justify-content:flex-end;gap:clamp(36px,7vh,80px)">
+    <div data-reveal="" style="display:flex;align-items:center;gap:18px;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase">
+      <span style="color:#D9A05B">Familiarity makes space for composure</span>
+    </div>
+    <blockquote data-reveal="" style="margin:0;max-width:min(900px,92%)">
+      <span style="display:block;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(60px,7vw,92px);line-height:.5;color:#D9A05B;text-shadow:0 2px 30px rgba(0,0,0,.4)">&ldquo;</span>
+      <p style="font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(28px,3.9vw,54px);line-height:1.16;letter-spacing:-.01em;color:#FFFFFF;margin:14px 0 0;text-wrap:balance;text-shadow:0 2px 40px rgba(0,0,0,.45)">We built it so that sharing your story will not feel so frightening, once you have a sense of what a hearing may feel like.</p>
+      <span style="display:block;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(60px,7vw,92px);line-height:.5;color:#D9A05B;text-align:right;margin-top:36px;text-shadow:0 2px 30px rgba(0,0,0,.4)">&rdquo;</span>
+    </blockquote>
+  </div>
+</section>
+
+<footer data-screen-label="Footer" style="background:#14213D;border-top:1px solid rgba(244,241,234,.08);color:#F4F1EA">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(70px,10vh,100px) clamp(20px,4vw,40px) 40px">
+    <div id="contact" style="display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(24px,4vw,60px);flex-wrap:wrap">
+      <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(25px,3vw,40px);line-height:1.14;letter-spacing:-.012em;margin:0;max-width:24ch">Built to lower the emotional barrier to justice.</h2>
+    </div>
+    <div style="height:1px;background:rgba(244,241,234,.14);margin:clamp(44px,7vh,64px) 0"></div>
+    <div style="display:flex;gap:clamp(32px,5vw,72px);flex-wrap:wrap">
+      <div style="flex:1 1 220px;min-width:220px">
+        <span style="color:#F7F6F2;font-size:16px;font-weight:600;letter-spacing:.2px;line-height:1">CourtPrep</span>
+        <p style="font-size:13.5px;line-height:1.65;color:rgba(244,241,234,.6);max-width:240px;margin:16px 0 0">A virtual courtroom for civil hearings in England &amp; Wales. Familiarisation, not legal advice. We will never coach you, but rather familiarise you with a hearing.</p>
+      </div>
+      <div style="flex:2 1 560px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:clamp(28px,3vw,44px);align-items:start">
+        <div style="display:flex;flex-direction:column;gap:13px;font-size:14px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:rgba(244,241,234,.5);text-transform:uppercase;margin-bottom:4px">Working with law firms</span>
+          <a href="mailto:support@courtroomready.org?subject=CourtPrep%20demo" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">See a demo</a>
+          <a href="mailto:support@courtroomready.org?subject=Partnering%20with%20CourtPrep" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Partner with us</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:13px;font-size:14px">
+          <span id="further-support" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:rgba(244,241,234,.5);text-transform:uppercase;margin-bottom:4px">Further support</span>
+          <a href="https://www.citizensadvice.org.uk" target="_blank" rel="noopener noreferrer" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Citizens Advice</a>
+          <a href="https://www.supportthroughcourt.org" target="_blank" rel="noopener noreferrer" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Support Through Court</a>
+          <a href="https://weareadvocate.org.uk" target="_blank" rel="noopener noreferrer" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Advocate</a>
+          <a href="https://www.lawworks.org.uk" target="_blank" rel="noopener noreferrer" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">LawWorks</a>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:rgba(244,241,234,.42);text-transform:uppercase;margin:10px 0 4px">Finding your way around court</span>
+          <a href="https://www.gov.uk/find-court-tribunal" target="_blank" rel="noopener noreferrer" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Find a court or tribunal</a>
+          <a href="https://www.gov.uk/guidance/what-to-expect-coming-to-a-court-or-tribunal" target="_blank" rel="noopener noreferrer" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">What to expect in court</a>
+          <a href="https://www.gov.uk/get-help-with-court-fees" target="_blank" rel="noopener noreferrer" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Help with court fees</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:13px;font-size:14px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:rgba(244,241,234,.5);text-transform:uppercase;margin-bottom:4px">About CourtPrep</span>
+          <a href="about.html" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Our story</a>
+          <a href="about.html#mission" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">What we set out to do</a>
+          <a href="mailto:support@courtroomready.org" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Contact us at support@courtroomready.org</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:13px;font-size:14px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:rgba(244,241,234,.5);text-transform:uppercase;margin-bottom:4px">Governance</span>
+          <a href="privacy.html" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Privacy Notice</a>
+          <a href="terms.html" style="color:rgba(244,241,234,.85)" style-hover="color:#F4F1EA">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(244,241,234,.14);margin-top:clamp(44px,7vh,64px);padding-top:26px;font-size:12.5px;color:rgba(244,241,234,.5)">
+      <span>© 2026 CourtPrep. All rights reserved.</span>
+      <span>Feedback on how you deliver, never on what you say. Not legal advice.</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;formspreeId&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;mvkgqwgk&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Email capture&quot;}, &quot;motion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Motion&quot;}, &quot;overlayStrength&quot;: {&quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 1, &quot;min&quot;: 0.3, &quot;max&quot;: 1, &quot;step&quot;: 0.05, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Hero&quot;}}">
+class Component extends DCLogic {
+  state = { stage: 'idle', email: '', gotcha: '' };
+  renderVals() {
+    return {
+      showIdle: this.state.stage === 'idle',
+      showEmail: this.state.stage === 'email',
+      showDone: this.state.stage === 'done',
+      email: this.state.email,
+      gotcha: this.state.gotcha,
+      setGotcha: (e) => this.setState({ gotcha: e.target.value }),
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      startSignup: () => this.setState({ stage: 'email' }, () => {
+        setTimeout(() => { if (this.emailInput) this.emailInput.focus(); }, 60);
+      }),
+      submitEmail: (e) => {
+        e.preventDefault();
+        const email = this.state.email.trim();
+        if (this.state.gotcha) return;
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254) return;
+        const id = (this.props.formspreeId || 'mvkgqwgk').trim();
+        if (!/^[a-zA-Z0-9]+$/.test(id)) return;
+        if (id) {
+          fetch('https://formspree.io/f/' + id, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({ email, source: 'CourtPrep hero waitlist' })
+          }).catch(() => {});
+        }
+        this.setState({ stage: 'done' });
+      },
+      emailInputRef: (el) => { this.emailInput = el; },
+      videoRef: (el) => { this.video = el; if (el) { el.muted = true; el.defaultMuted = true; el.volume = 0; el.addEventListener('volumechange', () => { if (!el.muted || el.volume > 0) { el.muted = true; el.volume = 0; } }); } },
+      overlayRef: (el) => { this.overlay = el; }
+    };
+  }
+  componentDidMount() {
+    if (this.overlay) this.overlay.style.opacity = String(this.props.overlayStrength ?? 1);
+    if (this.video) { this.video.muted = true; this.video.volume = 0; this.video.play?.().catch(() => {}); }
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if ((this.props.motion ?? true) && !reduced && 'IntersectionObserver' in window) {
+      const els = Array.from(document.querySelectorAll('[data-reveal]'));
+      els.forEach((el) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(18px)';
+        el.style.transition = 'opacity 1.05s cubic-bezier(.22,.61,.21,1), transform 1.05s cubic-bezier(.22,.61,.21,1)';
+      });
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            const d = parseInt(en.target.getAttribute('data-reveal') || '0', 10) || 0;
+            en.target.style.transitionDelay = (d * 110) + 'ms';
+            en.target.style.opacity = '1';
+            en.target.style.transform = 'translateY(0)';
+            this.observer.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+      els.forEach((el) => this.observer.observe(el));
+    }
+  }
+  componentWillUnmount() { if (this.observer) this.observer.disconnect(); }
+}
+</script>
+</body>
+</html>

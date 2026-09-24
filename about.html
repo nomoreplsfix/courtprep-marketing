@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: blob:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>About | CourtPrep</title>
+<meta name="description" content="CourtPrep gives people a private space to experience the rhythm of a civil hearing in England and Wales, so the setting feels familiar.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://courtroomready.org/about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About | CourtPrep">
+<meta property="og:description" content="Why CourtPrep was built, and how it sits alongside legal support.">
+<meta property="og:url" content="https://courtroomready.org/about.html">
+<meta property="og:image" content="https://courtroomready.org/uploads/about-hero-wide.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F4F1EA; color: #17181A; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: #8B3038; text-decoration: none; }
+a:hover { color: #16233F; }
+::selection { background: #16233F; color: #F4F1EA; }
+@media (max-width: 780px) { [data-fam-line], [data-fam-arrow] { display: none; } }
+[data-fam-grid] { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(30px, 4.5vw, 72px); }
+@media (max-width: 780px) { [data-fam-grid] { grid-template-columns: 1fr; gap: clamp(40px, 8vw, 56px); } }
+</style>
+</helmet>
+
+<div data-screen-label="About" style="min-width:0;background:#F4F1EA">
+
+<nav style="position:sticky;top:0;z-index:60;background:rgba(20,33,61,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(244,241,234,.1)">
+  <div style="max-width:1200px;margin:0 auto;padding:16px clamp(20px,4vw,40px);display:flex;align-items:center;gap:clamp(14px,3vw,32px);flex-wrap:wrap">
+    <a href="index.html" style="color:#F7F6F2;font-size:16px;font-weight:600;letter-spacing:.2px;line-height:1" style-hover="color:#FFFFFF">CourtPrep</a>
+    <div style="display:flex;gap:clamp(14px,2.6vw,28px);align-items:center;flex-wrap:wrap;font-size:13.5px">
+      <a href="index.html#product" style="color:rgba(244,241,234,.72)" style-hover="color:#FFFFFF">Product</a>
+      <a href="index.html#built-for" style="color:rgba(244,241,234,.72)" style-hover="color:#FFFFFF">Built for</a>
+      <a href="about.html" style="color:#FFFFFF;font-weight:600" style-hover="color:#FFFFFF">About</a>
+    </div>
+    <div style="flex:1"></div>
+    <a href="mailto:hello@courtprep.co.uk?subject=CourtPrep%20demo" style="background:#8B3038;color:#F7F6F2;font-size:13px;font-weight:600;padding:10px 18px;border-radius:6px;display:inline-flex;align-items:center;gap:8px" style-hover="background:#7A2830;color:#F7F6F2">Talk to us<span style="font-size:13px;line-height:1">→</span></a>
+  </div>
+</nav>
+
+<section data-screen-label="Hero" style="position:relative;overflow:hidden;background:#14213D;min-height:clamp(560px,74vh,860px);display:flex;align-items:center">
+  <img data-crop="" src="uploads/about-hero-wide.jpg" alt="Sunlight falling across a quiet courthouse corridor and a wooden bench" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg, rgba(12,18,32,.9) 0%, rgba(12,18,32,.72) 48%, rgba(12,18,32,.36) 100%)"></div>
+  <div style="position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;padding:clamp(64px,11vh,130px) clamp(24px,5vw,80px)">
+    <div data-reveal="" style="max-width:min(820px,92%)">
+      <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.22em;color:#D9A05B;text-transform:uppercase">
+        <span style="display:inline-block;width:28px;height:1px;background:#D9A05B"></span>
+        <span>About CourtPrep</span>
+      </div>
+      <h1 style="font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(40px,6vw,92px);line-height:1.03;letter-spacing:-.022em;color:#FFFFFF;margin:clamp(24px,3.5vh,34px) 0 0;max-width:15ch;text-wrap:balance;text-shadow:0 2px 40px rgba(0,0,0,.45)">Making the hearing experience feel familiar.</h1>
+      <p style="font-size:clamp(17px,1.5vw,22px);line-height:1.66;color:rgba(244,241,234,.86);max-width:min(50ch,100%);margin:clamp(24px,3.5vh,34px) 0 0;text-wrap:pretty;text-shadow:0 1px 20px rgba(0,0,0,.4)">CourtPrep gives people a private space to experience the rhythm and pressure of a hearing, so the setting feels familiar and they can focus on being present.</p>
+    </div>
+  </div>
+</section>
+
+<section id="for-legal" data-screen-label="For legal organisations" style="background:#F4F1EA;padding:clamp(76px,12vh,132px) clamp(24px,5vw,64px);border-top:1px solid rgba(22,35,63,.14)">
+  <div style="max-width:1200px;margin:0 auto">
+    <div data-reveal="" style="display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:.2em;color:#8B3038;text-transform:uppercase">
+      <span style="display:inline-block;width:24px;height:1px;background:#8B3038"></span>
+      <span>For legal organisations</span>
+    </div>
+    <div style="margin-top:clamp(34px,5vh,54px);display:flex;flex-wrap:wrap;gap:clamp(36px,6vw,84px);align-items:start">
+      <h2 data-reveal="" style="flex:1.15 1 340px;min-width:min(340px,100%);font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(30px,4.2vw,54px);line-height:1.06;letter-spacing:-.02em;color:#171921;margin:0;max-width:16ch;text-wrap:balance">Built to work alongside legal support.</h2>
+      <div style="flex:1 1 300px;min-width:min(300px,100%);max-width:54ch">
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
+          <p style="font-size:clamp(16px,1.4vw,19px);line-height:1.75;color:#3F4550;margin:0;text-wrap:pretty">CourtPrep is designed to complement the support already provided by lawyers, clinics and other organisations working with people attending civil hearings.</p>
+          <p style="font-size:clamp(16px,1.4vw,19px);line-height:1.75;color:#3F4550;margin:0;text-wrap:pretty">It gives people a private space to become familiar with the hearing experience, while leaving legal advice and the substance of the case where they belong: with the legal professionals supporting them.</p>
+        </div>
+        <div data-reveal="1" style="margin-top:clamp(30px,4.5vh,44px);display:flex;gap:clamp(18px,3vw,28px);align-items:center;flex-wrap:wrap">
+          <a href="mailto:support@courtroomready.org?subject=CourtPrep%20for%20your%20clients" style="background:#8B3038;color:#F7F6F2;font-size:15px;font-weight:600;padding:15px 26px;border-radius:6px;display:inline-flex;align-items:center;gap:10px" style-hover="background:#7A2830;color:#F7F6F2">Talk to us about CourtPrep for your clients</a>
+          <a href="index.html#product" style="font-size:15px;font-weight:600;color:#8B3038" style-hover="color:#16233F">See the product →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mission" data-screen-label="Why we built" style="position:relative;overflow:hidden;background:#14213D;border-top:1px solid rgba(22,35,63,.14)">
+  <img data-crop="" src="uploads/our-story-park.jpg" alt="A tree-lined avenue in a London park in warm evening light" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg, rgba(12,18,32,.92) 0%, rgba(12,18,32,.76) 48%, rgba(12,18,32,.42) 100%)"></div>
+  <div style="position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:clamp(76px,12vh,132px) clamp(24px,5vw,64px)">
+    <div data-reveal="" style="display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:.2em;color:#D9A05B;text-transform:uppercase">
+      <span style="display:inline-block;width:24px;height:1px;background:#D9A05B"></span>
+      <span>Why we built CourtPrep</span>
+    </div>
+    <div style="margin-top:clamp(34px,5vh,54px);display:flex;flex-wrap:wrap;gap:clamp(36px,6vw,84px);align-items:start">
+      <div style="flex:1.25 1 360px;min-width:min(360px,100%)">
+        <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(29px,4.2vw,54px);line-height:1.08;letter-spacing:-.018em;color:#FFFFFF;margin:0;text-wrap:balance;text-shadow:0 2px 34px rgba(0,0,0,.4)">Our story</h2>
+      </div>
+      <div style="flex:1 1 300px;min-width:min(300px,100%);max-width:52ch">
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
+          <p style="font-size:clamp(16px,1.35vw,18px);line-height:1.75;color:rgba(244,241,234,.88);margin:0;text-wrap:pretty;text-shadow:0 1px 18px rgba(0,0,0,.4)">CourtPrep grew out of years spent working alongside people facing courts and tribunals.</p>
+          <p style="font-size:clamp(16px,1.35vw,18px);line-height:1.75;color:rgba(244,241,234,.88);margin:0;text-wrap:pretty;text-shadow:0 1px 18px rgba(0,0,0,.4)">We saw how much work can go into the legal side of a case, while the hearing itself can still feel completely unfamiliar to the person at the centre of it.</p>
+          <p style="font-size:clamp(16px,1.35vw,18px);line-height:1.75;color:rgba(244,241,234,.88);margin:0;text-wrap:pretty;text-shadow:0 1px 18px rgba(0,0,0,.4)">CourtPrep was built to give people somewhere private to experience that environment, find their footing and feel more comfortable with what lies ahead.</p>
+        </div>
+        <div data-reveal="1" style="margin-top:clamp(28px,4vh,40px);padding-top:clamp(24px,3.5vh,34px);border-top:1px solid rgba(244,241,234,.22)">
+          <p style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(18px,1.8vw,23px);line-height:1.4;color:#F4F1EA;margin:0;text-wrap:balance;text-shadow:0 1px 20px rgba(0,0,0,.4)">Sometimes, simply knowing what an experience feels like can make it easier to navigate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Familiarity" style="background:#F4F1EA;padding:clamp(76px,12vh,132px) clamp(24px,5vw,64px);border-top:1px solid rgba(22,35,63,.14)">
+  <div style="max-width:1200px;margin:0 auto">
+    <h2 data-reveal="" style="font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(32px,4.8vw,60px);line-height:1.04;letter-spacing:-.02em;color:#171921;margin:0;max-width:18ch;text-wrap:balance">Familiarity with the experience</h2>
+    <div data-fam-wrap="" style="position:relative;margin-top:clamp(52px,8vh,92px)">
+      <div data-fam-line="" style="position:absolute;top:5px;left:0;right:0;height:2px;background:rgba(139,48,56,.4);transform-origin:left center;z-index:0;pointer-events:none"></div>
+      <span data-fam-arrow="" aria-hidden="true" style="position:absolute;top:0;right:-2px;width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:9px solid rgba(139,48,56,.55);z-index:0;pointer-events:none"></span>
+      <div data-fam-grid="" style="position:relative;z-index:1;display:grid">
+        <div data-fam-card="" style="position:relative;padding-top:clamp(30px,4vh,46px)">
+          <span aria-hidden="true" style="position:absolute;top:0;left:0;width:12px;height:12px;border-radius:50%;background:#8B3038;box-shadow:0 0 0 6px #F4F1EA"></span>
+          <span style="display:block;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(32px,3.3vw,50px);line-height:1;letter-spacing:-.01em;color:#8B3038">01</span>
+          <div aria-hidden="true" style="width:26px;height:2px;background:#8B3038;opacity:.7;margin:14px 0 0"></div>
+          <h3 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(20px,2vw,26px);line-height:1.16;letter-spacing:-.01em;color:#171921;margin:clamp(16px,2.2vh,22px) 0 0">Know how it feels</h3>
+          <p style="font-size:clamp(15.5px,1.15vw,17px);line-height:1.7;color:#4A505C;margin:12px 0 0;max-width:40ch;text-wrap:pretty">Experience the pace, formality and interaction of a simulated hearing in your own time.</p>
+        </div>
+        <div data-fam-card="" style="position:relative;padding-top:clamp(30px,4vh,46px)">
+          <span aria-hidden="true" style="position:absolute;top:0;left:0;width:12px;height:12px;border-radius:50%;background:#8B3038;box-shadow:0 0 0 6px #F4F1EA"></span>
+          <span style="display:block;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(32px,3.3vw,50px);line-height:1;letter-spacing:-.01em;color:#8B3038">02</span>
+          <div aria-hidden="true" style="width:26px;height:2px;background:#8B3038;opacity:.7;margin:14px 0 0"></div>
+          <h3 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(20px,2vw,26px);line-height:1.16;letter-spacing:-.01em;color:#171921;margin:clamp(16px,2.2vh,22px) 0 0">Find your footing</h3>
+          <p style="font-size:clamp(15.5px,1.15vw,17px);line-height:1.7;color:#4A505C;margin:12px 0 0;max-width:40ch;text-wrap:pretty">Go through the experience at your own pace, so it starts to feel familiar.</p>
+        </div>
+        <div data-fam-card="" style="position:relative;padding-top:clamp(30px,4vh,46px)">
+          <span aria-hidden="true" style="position:absolute;top:0;left:0;width:12px;height:12px;border-radius:50%;background:#8B3038;box-shadow:0 0 0 6px #F4F1EA"></span>
+          <span style="display:block;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(32px,3.3vw,50px);line-height:1;letter-spacing:-.01em;color:#8B3038">03</span>
+          <div aria-hidden="true" style="width:26px;height:2px;background:#8B3038;opacity:.7;margin:14px 0 0"></div>
+          <h3 style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(20px,2vw,26px);line-height:1.16;letter-spacing:-.01em;color:#171921;margin:clamp(16px,2.2vh,22px) 0 0">Reflect afterwards</h3>
+          <p style="font-size:clamp(15.5px,1.15vw,17px);line-height:1.7;color:#4A505C;margin:12px 0 0;max-width:40ch;text-wrap:pretty">See simple observations about how you communicated, such as your pace or filler words, without judging what you said.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Experience not evidence" style="position:relative;overflow:hidden;background:#14213D;min-height:clamp(540px,70vh,820px);display:flex;align-items:center">
+  <img data-crop="" src="uploads/about-street.jpg" alt="A tree-lined street beside a classical stone building in soft evening light" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg, rgba(12,18,32,.92) 0%, rgba(12,18,32,.74) 48%, rgba(12,18,32,.4) 100%)"></div>
+  <div style="position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;padding:clamp(64px,11vh,120px) clamp(24px,5vw,80px)">
+    <div style="max-width:min(760px,92%)">
+      <div data-reveal="" style="display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:.2em;color:#D9A05B;text-transform:uppercase">
+        <span style="display:inline-block;width:24px;height:1px;background:#D9A05B"></span>
+        <span>What CourtPrep looks at</span>
+      </div>
+      <h2 data-reveal="" style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(30px,4.6vw,68px);line-height:1.06;letter-spacing:-.018em;color:#FFFFFF;margin:clamp(22px,3vh,30px) 0 0;max-width:15ch;text-wrap:balance;text-shadow:0 2px 34px rgba(0,0,0,.4)">Focused on the experience, not the evidence.</h2>
+      <div data-reveal="1" style="margin-top:clamp(26px,4vh,36px);display:flex;flex-direction:column;gap:20px;max-width:min(52ch,100%)">
+        <p style="font-size:clamp(17px,1.4vw,21px);line-height:1.72;color:rgba(244,241,234,.86);margin:0;text-wrap:pretty;text-shadow:0 1px 18px rgba(0,0,0,.35)">CourtPrep pays attention to what a hearing feels like: the pace, the quiet, the waiting, and the way people speak to one another. It does not look at your case, your answers or your evidence.</p>
+        <p style="font-size:clamp(17px,1.4vw,21px);line-height:1.72;color:rgba(244,241,234,.86);margin:0;text-wrap:pretty;text-shadow:0 1px 18px rgba(0,0,0,.35)">Those things stay where they belong, with you and the people giving you legal advice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer data-screen-label="Footer" style="background:#14213D;border-top:1px solid rgba(244,241,234,.08);color:#F4F1EA">
+  <div style="max-width:1120px;margin:0 auto;padding:clamp(64px,9vh,96px) clamp(20px,4vw,40px) 40px">
+    <p style="font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(24px,2.8vw,38px);line-height:1.16;letter-spacing:-.012em;margin:0;max-width:20ch;text-wrap:balance">Built to lower the emotional barrier to justice.</p>
+    <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(244,241,234,.14);margin-top:clamp(44px,7vh,64px);padding-top:26px;font-size:12.5px;color:rgba(244,241,234,.5)">
+      <span>© 2026 CourtPrep. All rights reserved.</span>
+      <span>Feedback on how you deliver, never on what you say. Not legal advice.</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: &quot;100%&quot;}, &quot;motion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Motion&quot;}}">
+class Component extends DCLogic {
+  renderVals() { return {}; }
+  componentDidMount() {
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!(this.props.motion ?? true) || reduced || !('IntersectionObserver' in window)) return;
+
+    const reveals = Array.from(document.querySelectorAll('[data-reveal]'));
+    reveals.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity 1.05s cubic-bezier(.22,.61,.21,1), transform 1.05s cubic-bezier(.22,.61,.21,1)';
+    });
+    const rules = Array.from(document.querySelectorAll('[data-rule]'));
+    rules.forEach((el) => {
+      el.style.transformOrigin = 'left center';
+      el.style.transform = 'scaleX(0)';
+      el.style.transition = 'transform 1.2s cubic-bezier(.22,.61,.21,1)';
+    });
+    const crops = Array.from(document.querySelectorAll('[data-crop]'));
+    crops.forEach((el) => {
+      el.style.transition = 'opacity 1.3s ease, transform 1.6s cubic-bezier(.22,.61,.21,1)';
+      el.style.opacity = '0';
+      el.style.transform = 'scale(1.05)';
+    });
+
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        const el = en.target;
+        if (el.hasAttribute('data-reveal')) {
+          const d = parseInt(el.getAttribute('data-reveal') || '0', 10) || 0;
+          el.style.transitionDelay = (d * 120) + 'ms';
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        } else if (el.hasAttribute('data-rule')) {
+          el.style.transform = 'scaleX(1)';
+        } else if (el.hasAttribute('data-crop')) {
+          el.style.opacity = '1';
+          el.style.transform = 'scale(1)';
+        }
+        this.observer.unobserve(el);
+      });
+    }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+
+    [...reveals, ...rules, ...crops].forEach((el) => this.observer.observe(el));
+
+    // Familiarity: progression path (heading -> 01 -> line -> 02 -> 03)
+    const famCards = Array.from(document.querySelectorAll('[data-fam-card]'));
+    const famLine = document.querySelector('[data-fam-line]');
+    const famWrap = document.querySelector('[data-fam-wrap]');
+    famCards.forEach((c) => {
+      c._ft = c.style.transition;
+      c.style.opacity = '0';
+      c.style.transform = 'translateY(26px)';
+      c.style.transition = 'opacity .8s ease-out, transform .8s cubic-bezier(.22,.61,.21,1)';
+    });
+    if (famLine) {
+      famLine.style.transform = 'scaleX(0)';
+      famLine.style.transition = 'transform 1.5s cubic-bezier(.4,0,.1,1)';
+    }
+    if (famWrap) {
+      const io1 = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (!en.isIntersecting) return;
+          if (famLine) { famLine.style.transitionDelay = '.55s'; famLine.style.transform = 'scaleX(1)'; }
+          famCards.forEach((c, i) => {
+            const delay = 0.2 + i * 0.55;
+            c.style.transitionDelay = delay + 's';
+            c.style.opacity = '1';
+            c.style.transform = 'translateY(0)';
+            setTimeout(() => {
+              c.style.transition = c._ft || '';
+              c.style.transitionDelay = '';
+              c.style.transform = '';
+            }, (delay + 0.95) * 1000);
+          });
+          io1.unobserve(en.target);
+        });
+      }, { threshold: 0.2 });
+      io1.observe(famWrap);
+    }
+
+    // Mission: attention moves from the case to the person
+    const attn = document.querySelector('[data-attn]');
+    const person = document.querySelector('[data-person]');
+    if (person) {
+      person.style.opacity = '0';
+      person.style.transform = 'translateY(16px)';
+      person.style.transition = 'opacity 1s ease-out, transform 1s cubic-bezier(.22,.61,.21,1)';
+      const io2 = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (!en.isIntersecting) return;
+          person.style.opacity = '1';
+          person.style.transform = 'translateY(0)';
+          if (attn) { attn.style.transition = 'color 1s ease-out'; attn.style.color = '#5F6470'; }
+          io2.unobserve(en.target);
+        });
+      }, { threshold: 0, rootMargin: '0px 0px -42% 0px' });
+      io2.observe(person);
+    }
+
+    // Fallback: never leave content permanently hidden if IO doesn't fire.
+    this._revealFallback = setTimeout(() => {
+      [...reveals, ...crops, ...famCards].forEach((el) => {
+        el.style.transitionDelay = '';
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      });
+      rules.forEach((el) => { el.style.transform = 'scaleX(1)'; });
+      if (famLine) { famLine.style.transform = 'scaleX(1)'; }
+      if (person) { person.style.opacity = '1'; person.style.transform = 'none'; }
+    }, 1400);
+  }
+  componentWillUnmount() { if (this.observer) this.observer.disconnect(); if (this._revealFallback) clearTimeout(this._revealFallback); }
+}
+</script>
+</body>
+</html>
